@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h2>Welcome, {{ role }}!</h2>
+    <nav>
+        <a href="{{ url_for('viewer_page') }}">Viewer Page</a> |
+        <a href="{{ url_for('editor_page') }}">Editor Page</a> |
+        <a href="{{ url_for('admin_page') }}">Admin Page</a> |
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </nav>
+</body>
+</html>
